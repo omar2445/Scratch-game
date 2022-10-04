@@ -1,0 +1,43 @@
+body{
+    background-color: rgb(87, 196, 196);
+
+}
+.containe{
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+.settings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+input[type=color] {
+    width: 100px;
+    height: 100px; 
+    overflow: hidden;
+}
+button{
+    border: none;
+    border-radius: 3px;
+    padding: 8px;
+    width: 90px;
+    height: 40px;
+    background-color: rgb(158, 196, 158);
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+#container{
+    background-color: white;
+    border: solid 1px rgb(0, 0, 0);
+    display: grid;
+    width: 500px;
+    height: 500px;
+}
+.gridRow {
+    border: 1px solid black;
+}
