@@ -4,13 +4,12 @@ const grid = document.getElementById('container');
 let mouseDown = false
 document.body.onmousedown = () => (mouseDown = true)
 document.body.onmouseup = () => (mouseDown = false)
-
 //settings 
 const colorMode = document.getElementById('colorMode');
 let colorChanger = document.getElementById('colorChanger');
 const rainbowMode = document.getElementById('rainbowMode');
 let sizeSlider = document.getElementById('sizeSlider');
-const erase = document.getElementById('erase') 
+const erase = document.getElementById('erase'); 
 const clear = document.getElementById('clear');
 let cmd;
 //make grids
@@ -60,7 +59,7 @@ clear.addEventListener('click',()=>{
 });
 
 function changecolor(e){
-    if (e.type === 'mouseover' && !'mousedown') return
+    if (e.type === 'mouseover' && !mouseDown) return
     if(cmd === "colormode"){
         e.target.style.backgroundColor = colorChanger.value;
     }
