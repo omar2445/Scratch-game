@@ -3,7 +3,7 @@ body{
 
 }
 .containe{
-    margin-top: 90px;
+    margin-top: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,4 +40,9 @@ button{
 }
 .gridRow {
     border: 1px solid black;
+}
+.h{
+    font-size: 70px;
+    margin: 0px;
+    margin-left: 460px;
 }
